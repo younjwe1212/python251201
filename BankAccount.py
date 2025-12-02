@@ -5,9 +5,11 @@ class BankAccount:
     def __init__(self, id, name, balance):
         self.id = id
         self.name = name 
-        self.balance = balance 
+        self.balance = balance
+    #입금메서드 
     def deposit(self, amount):
-        self.balance += amount 
+        self.balance += amount
+    #출금 
     def withdraw(self, amount):
         self.balance -= amount
     def __str__(self):
